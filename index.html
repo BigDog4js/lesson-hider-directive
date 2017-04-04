@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <div ng-controller="lessonCtrl">
+        <div ng-repeat="lesson in lessons">
+            <lesson-hider lesson="lesson"></lesson-hider>
+          
+        </div>
+          
+<!--        <div ng-repeat="lesson in lessons">{{lesson}}</div>  -->
+<!--      <lesson-hider ng-repeat="lesson in lessons" lesson="lesson" day-alert="announceDay(lesson, day)"></lesson-hider>-->
+          
+<!--
+        Controller Test: {{test}}
+          <br>
+          Service Test: {{serviceTest}}
+-->
+      </div>
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js">
+   </script>  
+      
+    <script src="app.js"></script>
+      
+    <script src="lessonCtrl.js"></script>
+      
+    <script src="lessonService.js"></script>
+    
+    <script src="lessonHider.js"></script>
+      
+   </body>
+</html>
